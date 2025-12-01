@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0b0e12;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Landing Page */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #b4b4b4;
+}
+
+/* About */
+/* About Section Styling */
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.about-card {
+    width: 70%;
+    background: #11161d;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.15);
+    border: 1px solid #1d232c;
+    animation: fadeIn 1.1s ease-in-out;
+}
+
+.about-card h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00aaff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-card p {
+    margin-bottom: 18px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #d8d8d8;
+}
+
+
+/* Active Navigation Highlight */
+nav ul li a.active {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Skills */
+.skills-grid {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-box {
+    background: #11161d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact-container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
